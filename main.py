@@ -6,7 +6,7 @@ from PyQt5.QtGui import QPainter, QColor
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 
-class Example(QMainWindow):
+class DrawCircles(QMainWindow):
     def __init__(self):
         super().__init__()
         self.qp = QPainter()
@@ -38,6 +38,6 @@ class Example(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = Example()
+    ex = DrawCircles()
     ex.show()
     sys.exit(app.exec())
